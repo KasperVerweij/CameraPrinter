@@ -3,7 +3,7 @@ from PIL import Image,ImageOps
 import numpy as np
 import os
 
-def button1_Click():
+def printimage():
     try:
         print("Opening serial port...")
         serialPort = serial.Serial('/dev/serial0', 9600, timeout=1)  # Internal serial port of the Raspberry Pi with timeout
@@ -96,4 +96,4 @@ def applyFloydSteinbergDithering(input_image):
     return output_image
 
 # Usage
-button1_Click()
+printimage()
